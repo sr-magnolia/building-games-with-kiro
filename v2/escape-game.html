@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape del T-Rex - Huida Prehistórica</title>
+    <link rel="stylesheet" href="escape-style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="score">Distancia: 0m</div>
+            <div id="speed">Velocidad: 1.0x</div>
+            <div id="distance-indicator">
+                <div id="danger-level">PELIGRO: <span id="danger-text">SEGURO</span></div>
+            </div>
+        </div>
+        <div id="controls-hint">
+            ↑: SALTAR | ↓: AGACHARSE
+        </div>
+        <div id="game-over" class="hidden">
+            <div id="game-over-animation">
+                <h2>¡TE ATRAPÓ!</h2>
+                <p class="dramatic">🦖 El T-Rex te alcanzó 🦴</p>
+            </div>
+            <p>Distancia recorrida: <span id="final-score">0</span>m</p>
+            <p class="tip">Velocidad máxima: <span id="max-speed">1.0</span>x</p>
+            <button id="restart-btn">INTENTAR ESCAPAR DE NUEVO</button>
+        </div>
+        <div id="start-screen">
+            <h1>🦖 ESCAPE DEL T-REX 🏃</h1>
+            <p class="main-text">¡Corre por tu vida!</p>
+            <p class="subtitle">↑: Saltar | ↓: Agacharse</p>
+            <p class="hint">Esquiva obstáculos para acelerar y alejarte del T-Rex</p>
+            <p class="warning">Si chocas, el T-Rex se acercará más...</p>
+            <button id="start-btn">¡CORRER!</button>
+        </div>
+    </div>
+    <script src="escape-game.js"></script>
+</body>
+</html>
