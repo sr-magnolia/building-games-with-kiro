@@ -11,6 +11,8 @@ La Dinámica: El juego debe sentirse como una huida frenética. Si el caverníco
 El Vibe: Cuando el dinosaurio se acerque mucho, la música debe volverse más intensa y quiero un efecto de 'screen shake' (temblor de pantalla) para simular sus pisadas. Si el dinosaurio alcanza al cavernícola, el juego termina con una animación de 'Game Over' dramática pero cómica
 ```  
 
+> Credits used: 0.93 Elapsed time: 1m 10s
+
 ## 🎮 Cómo Jugar
 
 1. Abre `escape-game.html` en tu navegador
