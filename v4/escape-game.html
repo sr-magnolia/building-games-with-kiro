@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape del T-Rex - Huida Prehistórica</title>
+    <link rel="stylesheet" href="escape-style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="score">Distancia: 0m</div>
+            <div id="speed">Velocidad: 1.0x</div>
+            <div id="distance-indicator">
+                <div id="danger-level">PELIGRO: <span id="danger-text">SEGURO</span></div>
+            </div>
+        </div>
+        <div id="high-score-ui">
+            <div id="high-score">Récord: 0m</div>
+        </div>
+        <div id="controls-hint">
+            ↑: SALTAR | ↓: AGACHARSE
+        </div>
+        <div id="game-over" class="hidden">
+            <div id="game-over-animation">
+                <h2>¡TE ATRAPÓ!</h2>
+                <p class="dramatic">🦖 El T-Rex te alcanzó 🦴</p>
+            </div>
+            <p>Distancia recorrida: <span id="final-score">0</span>m</p>
+            <p class="tip">Velocidad máxima: <span id="max-speed">1.0</span>x</p>
+            
+            <div id="name-input-section">
+                <p class="name-prompt">Ingresa tu nombre:</p>
+                <input type="text" id="player-name" maxlength="15" placeholder="Tu nombre" />
+                <button id="save-score-btn">GUARDAR PUNTUACIÓN</button>
+            </div>
+            
+            <button id="restart-btn">INTENTAR ESCAPAR DE NUEVO</button>
+        </div>
+        <div id="start-screen">
+            <h1>🦖 ESCAPE DEL T-REX 🏃</h1>
+            <p class="main-text">¡Corre por tu vida!</p>
+            <p class="subtitle">↑: Saltar | ↓: Agacharse</p>
+            <p class="hint">Esquiva obstáculos para acelerar y alejarte del T-Rex</p>
+            <p class="warning">Si chocas, el T-Rex se acercará más...</p>
+            <div id="biome-selector">
+                <p class="biome-title">Selecciona tu bioma:</p>
+                <div class="biome-buttons">
+                    <button class="biome-btn" data-biome="snow">❄️ NIEVE</button>
+                    <button class="biome-btn" data-biome="desert">🏜️ DESIERTO</button>
+                    <button class="biome-btn" data-biome="jungle">🌴 SELVA</button>
+                </div>
+            </div>
+            <button id="start-btn">¡CORRER!</button>
+        </div>
+    </div>
+    
+    <div id="leaderboard-container">
+        <h3>🏆 TOP 5 MEJORES DISTANCIAS 🏆</h3>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Nombre</th>
+                    <th>Distancia</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <tr>
+                    <td colspan="3" class="no-scores">No hay puntuaciones aún</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="escape-game.js"></script>
+</body>
+</html>
