@@ -10,7 +10,13 @@ Una colección de juegos de persecución con temática prehistórica desarrollad
 │   ├── game.js
 │   └── README.md
 │
-└── v2/                    # Versión 2: Juego de huida tipo runner
+├── v2/                    # Versión 2: Juego de huida tipo runner
+│   ├── escape-game.html
+│   ├── escape-game.js
+│   ├── escape-style.css
+│   └── README.md
+│
+└── v3/                    # Versión 3: Runner mejorado con biomas y récords
     ├── escape-game.html
     ├── escape-game.js
     ├── escape-style.css
@@ -63,6 +69,30 @@ Una huida frenética donde el cavernícola corre automáticamente mientras un T-
 
 [Ver documentación completa →](v2/README.md)
 
+---
+
+### V3: Escape del T-Rex - Edición Mejorada 🆕
+**Tipo:** Endless runner con biomas, récords y obstáculos aéreos
+
+La versión definitiva del juego de escape con nuevas características emocionantes: dinosaurios voladores, sistema de récords con nombres de jugadores, y tres biomas diferentes para elegir.
+
+**Características:**
+- 🦅 **Dinosaurios voladores** a diferentes alturas (bajos y altos)
+- 🏆 **Sistema de récords** con top 10 de mejores puntuaciones
+- 🌍 **3 Biomas jugables**: Prehistórico, Selva y Desierto
+- 👤 **Nombres de jugadores** guardados con cada récord
+- 🎨 **Paletas de colores** únicas para cada bioma
+- 📊 **Persistencia de datos** con LocalStorage
+- Todas las características de V2 (velocidad dinámica, música, efectos)
+
+**Cómo jugar:**
+1. Abre `v3/escape-game.html` en tu navegador
+2. Usa ↑ para saltar y ↓ para agacharte
+3. Esquiva obstáculos terrestres y aéreos
+4. ¡Establece un nuevo récord!
+
+[Ver documentación completa →](v3/README.md)
+
 ## 🚀 Inicio Rápido
 
 No requiere instalación ni dependencias. Simplemente abre cualquiera de los archivos HTML en tu navegador:
@@ -73,6 +103,9 @@ Abre v1/index.html en tu navegador
 
 # Versión 2
 Abre v2/escape-game.html en tu navegador
+
+# Versión 3 (Recomendada)
+Abre v3/escape-game.html en tu navegador
 ```
 
 ## 🛠️ Tecnologías Utilizadas
@@ -84,15 +117,17 @@ Abre v2/escape-game.html en tu navegador
 
 ## 📊 Comparación de Versiones
 
-| Característica | V1 | V2 |
-|----------------|----|----|
-| Tipo de juego | Persecución libre | Endless runner |
-| Control | Multidireccional | Salto/Agacharse |
-| Velocidad | Constante | Dinámica |
-| Obstáculos | No | Sí |
-| Audio | No | Sí (generativo) |
-| Efectos visuales | Básicos | Screen shake, animaciones |
-| Dificultad | Estática | Progresiva |
+| Característica | V1 | V2 | V3 |
+|----------------|----|----|-----|
+| Tipo de juego | Persecución libre | Endless runner | Endless runner |
+| Control | Multidireccional | Salto/Agacharse | Salto/Agacharse |
+| Velocidad | Constante | Dinámica | Dinámica |
+| Obstáculos | No | Sí (terrestres) | Sí (terrestres + aéreos) |
+| Audio | No | Sí (generativo) | Sí (generativo) |
+| Efectos visuales | Básicos | Screen shake | Screen shake |
+| Dificultad | Estática | Progresiva | Progresiva |
+| Sistema de récords | No | No | Sí (top 10) |
+| Persistencia de datos | No | No | Sí (LocalStorage) |
 
 ## 🎯 Requisitos
 
@@ -104,20 +139,22 @@ Abre v2/escape-game.html en tu navegador
 
 ## 🎨 Concepto de Diseño
 
-Ambas versiones comparten la temática prehistórica pero ofrecen experiencias de juego diferentes:
+Las tres versiones comparten la temática prehistórica pero ofrecen experiencias de juego diferentes:
 
 - **V1** se enfoca en la estrategia y el control preciso
 - **V2** se enfoca en los reflejos y la tensión creciente
+- **V3** añade variedad visual, competitividad y rejugabilidad con  récords
 
 ## 🔮 Posibles Mejoras Futuras
 
-- Sistema de puntuación global entre versiones
-- Más tipos de dinosaurios
+- Sistema de logros y desafíos
+- Más tipos de dinosaurios y criaturas prehistóricas
 - Power-ups y habilidades especiales
-- Modo multijugador
-- Leaderboards online
+- Modo multijugador competitivo
+- Leaderboards online globales
 - Versión móvil con controles táctiles
-- Más biomas y escenarios
+- Más biomas (nieve, pantano, cueva)
+- Modo historia con niveles progresivos
 
 ## 📝 Licencia
 
