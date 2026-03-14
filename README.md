@@ -22,7 +22,7 @@ Una colección evolutiva de juegos de persecución con temática prehistórica d
 │   ├── escape-style.css
 │   └── README.md
 │
-└── my-game/                    # Versión 4: Edición completa con biomas y ranking 🆕
+└── v4/                    # Versión 4: Edición completa con biomas y ranking 🆕
     ├── escape-game.html
     ├── escape-game.js
     ├── escape-style.css
